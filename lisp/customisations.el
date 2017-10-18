@@ -10,5 +10,8 @@
 ;; Force every file to end with EOL.
 (setq require-final-newline t)
 
+;; Save window state.
+(desktop-save-mode 1)
+
 ;; Insert newlines after { for C.
 (setq c-auto-newline 1)
