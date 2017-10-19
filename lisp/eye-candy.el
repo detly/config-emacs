@@ -1,3 +1,7 @@
+(menu-bar-mode -1)
+
+(setq frame-resize-pixelwise t)
+
 (use-package sublimity
   :if (display-graphic-p)
   :config (
