@@ -2,6 +2,7 @@
 (load-library "session")
 (load-library "theming")
 (load-library "eye-candy")
+(load-library "modeline")
 (load-library "editing")
 (load-library "vcs")
 (load-library "c")

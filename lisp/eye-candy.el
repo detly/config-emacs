@@ -12,9 +12,14 @@
       (require 'sublimity-attractive)
       (sublimity-mode 1)
       (sublimity-map-set-delay nil)
-      ; (sublimity-attractive-hide-bars)
+      (sublimity-attractive-hide-bars)
       (sublimity-attractive-hide-vertical-border)
       (sublimity-attractive-hide-fringes)
+      (set-face-attribute 'mode-line nil
+        :box nil
+        :overline "dark grey"
+        :underline "dark grey"
+      )
   )
 )
 
@@ -22,3 +27,9 @@
 (set-display-table-slot standard-display-table 0 ?\…)
 
 (unless (display-graphic-p) (menu-bar-mode 0))
+
+(if (display-graphic-p)
+  (progn
+    (setq-default cursor-type 'bar)
+  )
+)

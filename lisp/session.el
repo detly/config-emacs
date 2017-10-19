@@ -4,5 +4,9 @@
 (setq initial-scratch-message "")
 
 ;; Save window state.
-(desktop-save-mode 1)
-(setq desktop-save t)
+(if (display-graphic-p)
+  (progn
+    (desktop-save-mode 1)
+    (setq desktop-save t)
+  )
+)
