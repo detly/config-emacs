@@ -8,7 +8,6 @@
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 
 (load-library "customisations")
-(load-library "ensure-packages")
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

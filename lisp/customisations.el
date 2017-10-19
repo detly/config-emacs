@@ -1,17 +1,7 @@
-;; Turn off the startup screen.
-(setq inhibit-startup-screen t)
-
-;; Truncate lines instead of soft-wrapping them by default.
-(set-default 'truncate-lines t)
-
-;; Use an ellipsis instead of a $ for line truncation.
-(set-display-table-slot standard-display-table 0 ?\…)
-
-;; Force every file to end with EOL.
-(setq require-final-newline t)
-
-;; Save window state.
-(desktop-save-mode 1)
-
-;; Insert newlines after { for C.
-(setq c-auto-newline 1)
+(load-library "packaging")
+(load-library "session")
+(load-library "theming")
+(load-library "eye-candy")
+(load-library "editing")
+(load-library "vcs")
+(load-library "c")
