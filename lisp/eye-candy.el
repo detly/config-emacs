@@ -30,6 +30,6 @@
 
 (if (display-graphic-p)
   (progn
-    (setq-default cursor-type 'bar)
+    (setq-default cursor-type '(bar . 1))
   )
 )
