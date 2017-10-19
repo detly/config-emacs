@@ -26,7 +26,7 @@
 ;; Use an ellipsis instead of a $ for line truncation.
 (set-display-table-slot standard-display-table 0 ?\…)
 
-(unless (display-graphic-p) (menu-bar-mode 0))
+(menu-bar-mode (if (display-graphic-p) 1 0))
 
 (if (display-graphic-p)
   (progn
