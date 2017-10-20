@@ -15,6 +15,10 @@
       (sublimity-attractive-hide-bars)
       (sublimity-attractive-hide-vertical-border)
       (sublimity-attractive-hide-fringes)
+      (setq
+        sublimity-scroll-weight 4
+        sublimity-scroll-drift-length 2
+      )
       (set-face-attribute 'mode-line nil
         :box nil
         :overline "dark grey"
