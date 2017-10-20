@@ -5,4 +5,5 @@
 (load-library "modeline")
 (load-library "editing")
 (load-library "vcs")
+(load-library "projects")
 (load-library "c")
