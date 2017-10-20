@@ -5,3 +5,10 @@
 (setq require-final-newline t)
 
 (global-linum-mode t)
+
+(defun bjm/kill-this-buffer ()
+  "Kill the current buffer."
+  (interactive)
+  (kill-buffer (current-buffer)))
+
+(global-set-key (kbd "C-x k") 'bjm/kill-this-buffer)
