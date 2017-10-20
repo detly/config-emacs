@@ -7,3 +7,4 @@
 (load-library "vcs")
 (load-library "projects")
 (load-library "c")
+(load-library "matlab")
